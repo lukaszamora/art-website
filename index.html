@@ -1,42 +1,93 @@
-<html>
-  <head>
-    <title>lukas.zamora</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="/logo.svg" href="logo.svg" />
-  </head>
-  <body>
-    <h1>lukas.zamora</h1>
-    <div class="list">
-(<span class="bold">about-me</span>
-  (code <a href="https://github.com/lukaszamora">github.com/lukaszamora</a>)
-  (linkedin <a href="https://linkedin.com/in/lukas-zamora">linkedin.com/in/lukas-zamora</a>)
-  (email <a href="mailto:lukaszamora@gmail.com">lukaszamora@gmail.com</a>))
-    </div>
-    <textarea
-      rows="25"
-      cols="30"
-      id="output"
-      style="
-        border: 0;
-        font-family: monospace;
-        background-color: ffffff;
-        resize: none;
-        overflow: hidden;
-      "
-    ></textarea>
-    <br />
-    <div class="list">
-(<span class="bold">projects</span>
-  (<a href="/spotify-map.html">spotify map</a>))
-    </div>
-    <div class="list">
-(<span class="bold">fun-stuff</span>
-  (my <a href="recipes">recipes</a>)
-  (my <a href="paintings">paintings</a>))
-    </div>
-    <script src="bonsai.js"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html class="js desktop" lang="en">
 
-<!-- e8e7e3 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie edge">
+    <title>Lukas Zamora</title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#233583">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function (h, b) {
+            h.className = h.className.replace(/\bno-js\b/, 'js');
+            window.onerror = function () {
+                h.className = h.className.replace(/\bjs\b/, 'no-js');
+            }
+            if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className +=
+                ' mobile';
+            if (b.indexOf('mobile') > 0 && b.indexOf('applewebkit') > 0 && b.indexOf('[FB') === -1) h.className +=
+                ' quirky-mobile';
+            else h.className += ' desktop';
+        })(document.documentElement, navigator.userAgent.toLowerCase())
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <section class="intro">
+            <h1>Hello!</h1>
+            <p class="redacted">
+                My name is <b>Lukas P Zamora</b>, the <b>P</b> stands for <span>Patrick</span> , and this is my website.
+            </p>
+            <p>
+                I'm currently looking for a web-developer-esque position doing projects that (hopefully) make the world
+                a
+                better place.
+            </p>
+            <p>
+                I'm also a <b>Painter</b>, <b>Musician</b>, and <b>Creator-of-something-to-be-announced-soon!</b>
+            </p>
+            <p>
+                <a href="mailto:lukaspzamora@gmail.com">write me</a><br>
+                <a href="https://www.github.com/lukaszamora/" target="_blank">github</a><br>
+                <a href="https://www.linkedin.com/in/lukas-zamora/" target="_blank">cv</a><br>
+                <a href="https://www.are.na/lukas-zamora" target="_blank">are.na</a><br>
+                <a href="https://www.instagram.com/lukaszeeeee" target="_blank">paintings</a><br>
+            </p>
+        </section>
+        <section class="project project--next">
+            <h2 class="project__title">Spotify Mapped</h2>
+            <p>
+                <a href="https://spotifymapped.com" target="_blank">website</a> - An alternate take on <b>Spotify
+                    Wrapped</b>, creating a map of your top songs based on various audio features.
+            </p>
+            <ul class="tags" aria-label="Tags">
+                <li>node.js</li>
+                <li>spotify api</li>
+                <li>css</li>
+            </ul>
+        </section>
+        <section class="project">
+            <h2 class="project__title">Project 2</h2>
+            <p>
+                <a href="">website</a> -
+            </p>
+            <ul class="tags" aria-label="Tags">
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="project">
+            <h2 class="project__title">Project 3</h2>
+            <p>
+                <a href="">website</a> -
+            </p>
+            <ul class="tags" aria-label="Tags">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
