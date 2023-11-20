@@ -612,8 +612,8 @@ a:focus {
 }
 
 .button--primary {
-    background-color: #233583;
-    border-color: #233583;
+    background-color: #003e1f;
+    border-color: #003e1f;
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
@@ -621,8 +621,8 @@ a:focus {
 
 .button--primary:hover,
 .button--primary:focus {
-    background-color: #18255b;
-    border-color: #18255b;
+    background-color: #003e1f;
+    border-color: #003e1f;
     color: white
 }
 
