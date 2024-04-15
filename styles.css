@@ -1,3 +1,7 @@
+* {
+    margin: 0.2em;
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
@@ -14,6 +18,7 @@ a:visited {
 
 h1 {
     font-size: 16px;
+    margin-left: 0px;
 }
 
 .container div {
@@ -40,13 +45,26 @@ h1 {
     float: left;
 }
 
-@media screen and (min-width: 768px) {
+figcaption em b {
+    margin-left: -3px;
+}
+
+
+@media screen and (min-width: 775px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    figure {
+        display: table;
     }
 
     .img-center {
         text-align: center;
 
+    }
+
+    div figure {
+        margin: 0px;
     }
 }
