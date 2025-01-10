@@ -3,9 +3,9 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial';
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 700;
     padding-right: 8px;
     /* text-decoration: black; */
 }
@@ -13,13 +13,14 @@ body {
 a,
 a:visited {
     text-decoration: underline;
-    color: inherit;
+    color: #6aa84f;
 
 }
 
 h1 {
-    font-size: 16px;
+    font-size: 20px;
     margin-left: -5px;
+    color: black;
 }
 
 .container div {
