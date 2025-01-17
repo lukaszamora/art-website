@@ -6,7 +6,7 @@ body {
     font-family: sans-serif;
     font-size: 13px;
     font-weight: 400;
-    padding-right: 0px;
+    padding-right: 8px;
     text-decoration: black;
 }
 
@@ -23,9 +23,24 @@ a:hover {
 
 h1 {
     font-size: 13px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     color: black;
     font-weight: 400;
+}
+
+.container div {
+    width: 100%;
+    height: auto;
+}
+
+.container div:nth-child(1) {
+    width: 100%;
+    border-right: 100px;
+}
+
+.container div:nth-child(2) {
+    width: 100%;
+    background: white;
 }
 
 .container {
@@ -33,41 +48,30 @@ h1 {
     grid-template-columns: 1fr;
 }
 
-.container div {
-    width: 100%;
-    height: auto;
-    /* background-color: aliceblue; */
-}
-
-.container div:nth-child(1) {
-    width: 100%;
-    position: relative;
-}
-
-/* .container div:nth-child(2) {
-    width: 0%;
-} */
-
 .img-center {
-    /* text-align: center; */
-    margin-top: 4em;
-    margin-left: 40%;
-    margin-right: auto;
-
+    float: left;
 }
 
-@media screen and (min-width: 768px) {
+figcaption em b {
+    margin-left: -3px;
+}
+
+
+@media screen and (min-width: 775px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .container div:nth-child(1) {
-        width: 100%;
+    figure {
+        display: table;
     }
 
     .img-center {
-        /* text-align: center; */
-        margin-left: 40%;
-        margin-right: 60%;
+        text-align: center;
+
+    }
+
+    div figure {
+        margin: 0px;
     }
 }
